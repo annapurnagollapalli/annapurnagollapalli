@@ -56,13 +56,5 @@ prediction = model.predict(sample_input_scaled)
 print(f"Loan Approval Prediction: {'Approved' if prediction[0] == 1 else 'Not Approved'}")
 
 
----
 
-🔧 Fixes & Improvements:
-
-✅ Handled all missing values explicitly
-✅ Checked for missing values before training (X.isnull().sum().sum())
-✅ Ensured X_train and X_test do not have NaNs using fillna(0)
-
-Now, your code should run without NaN issues. Let me know if you need further adjustments! 🚀
 
